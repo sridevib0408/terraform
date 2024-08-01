@@ -1,0 +1,26 @@
+Terraform allows us to create reusable code that can deploy identical set of infrastructure in a repetable fashion.
+
+IaC mainly divided in 2 categories;
+1. Infrastructure orchestration ( AWS cloudformation, Terraform )
+2. Configuration Management (Ansible, chef,puppet etc)
+
+CM tools are mainly used to maintain the desired configuration of the system(Inside Server)
+Infrastructure Orchestration is primary used for creating and managing infrastructure environment
+
+Authentication is the process of verifying who the user is
+Authorizatoin is the the process of verifying what they have access to.
+
+Terraform needs access credentials with relevant permissions to create and manage the environment
+
+EC2- Instance type is a combination of CPU and Memory.
+
+Terraform supports multiple provides- AWS, azure, gcp, ali baba etc
+
+A provider is a plugin that lets terraform manage a external API.
+When running terraform init, plugins required for the providers are automatically downloaded and stored in .terrform directory.
+Whenever you define new provider , you have run the terraform init command
+
+Resource block describes one or more infrastructure object related to provider
+
+Terraform requires explicit source information for any providers that are not harsicorp certified, using a new syntax in the required_providers nested block inside the terraform configuration block.
+
